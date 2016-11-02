@@ -15,6 +15,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    archive-zip (0.7.0)
+      io-like (~> 0.3.0)
     arel (6.0.3)
     builder (3.2.2)
     capybara (2.6.2)
@@ -26,10 +28,14 @@ GEM
       xpath (~> 2.0)
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
+    chromedriver-helper (1.0.0)
+      archive-zip (~> 0.7.0)
+      nokogiri (~> 1.6)
     coderay (1.1.1)
     diff-lcs (1.2.5)
     ffi (1.9.10)
     i18n (0.7.0)
+    io-like (0.3.0)
     json (1.8.3)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -96,6 +102,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   capybara
+  chromedriver-helper
   launchy
   pry
   rack-test
@@ -108,4 +115,4 @@ DEPENDENCIES
   sinatra-activerecord
 
 BUNDLED WITH
-   1.11.2
+   1.13.2
